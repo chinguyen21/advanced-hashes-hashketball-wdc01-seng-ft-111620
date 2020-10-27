@@ -162,9 +162,7 @@ end
 def player_numbers(team_name)
   game_hash.each do |key, value|
     if value[:team_name] == team_name
-    value[:players].map {|player| player[:number]}
-      
-      end
+      return value[:players].map {|player| player[:number]}
     end
   end
 end
